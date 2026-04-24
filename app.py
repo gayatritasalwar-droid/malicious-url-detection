@@ -133,6 +133,6 @@ def analyze():
 
 if __name__ == '__main__':
     import os
-    debug_mode = os.getenv('FLASK_ENV', 'development') == 'development'
+    debug_mode = os.getenv( 'development') == 'development'
     port = int(os.getenv('PORT', 5000))
     app.run(debug=debug_mode, host='0.0.0.0', port=port)
