@@ -71,7 +71,7 @@ def extract_all_features_v2(url):
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template("index.html")
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
